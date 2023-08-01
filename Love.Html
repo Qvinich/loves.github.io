@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Surat Cinta</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f0f0;
+    }
+
+    .love-letter {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      display: none;
+    }
+
+    #love-letter-btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ff4d4d;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="love-letter" id="letter-container">
+    <h2>love letters</h2>
+    <p>bae, happy girlfriend day, i'm so happy today because i can be with u, i also want to thank you because u are in my life, i don't know if u are not by my side, i will always love u , I will also always pay attention to u, I will give everything I can, don't think about many things, just think about the things u like, I'm happy to see u laugh, I'm proud of u, what no matter what happens i will always be with u, even though we are not perfect, but we will always be complete, i promise to take care of u, love u with all my heart, u will always be special in my heart, i love u so much babe, one more time , happy girlfriend day, mwahhhh</p>
+  </div>
+
+  <button id="love-letter-btn" onclick="showLoveLetter()">show love letter</button>
+
+  <script>
+    function showLoveLetter() {
+      // Perlihatkan surat cinta ketika tombol ditekan
+      var letterContainer = document.getElementById('letter-container');
+      var btn = document.getElementById('love-letter-btn');
+      
+      if (letterContainer.style.display === 'none') {
+        letterContainer.style.display = 'block';
+        btn.innerText = 'hide love letters';
+      } else {
+        letterContainer.style.display = 'none';
+        btn.innerText = 'show love letter';
+      }
+    }
+  </script>
+</body>
+</html>
